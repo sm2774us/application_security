@@ -1,2 +1,2 @@
-# macOS folder custom attrs
-.DS_Store
+_book
+node_modules
