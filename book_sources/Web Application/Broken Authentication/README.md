@@ -8,7 +8,7 @@ An application can return unknown data in response when performing an operation.
 
 # OAuth 2.0
 
-{% embed url="https://0xn3va.gitbook.io/cheat-sheets/web-application/oauth-2.0-vulnerabilities" %}
+{% raw %} {% embed url="https://0xn3va.gitbook.io/cheat-sheets/web-application/oauth-2.0-vulnerabilities" %} {% endraw %}
 
 # Password recovery
 
@@ -50,7 +50,7 @@ References:
 
 Components in a delivery chain, such as proxies, can pass an original host requested by the client using additional of HTTP headers:
 
-{% embed url="https://gist.github.com/0xn3va/b8ffb5c43d8dc24cdfcfc98e1890d71f" %}
+{% raw %} {% embed url="https://gist.github.com/0xn3va/b8ffb5c43d8dc24cdfcfc98e1890d71f" %} {% endraw %}
 
 You can try to use these headers for identifying the original host requested by the client in the `Host` request header:
 
@@ -130,9 +130,9 @@ Content-Length: 72
 
 ## Password recovery does not end previously created sessions
 
-{% hint style="info" %}
+{% raw %} {% hint style="info" %} {% endraw %}
 This is the best practice to follow
-{% endhint %}
+{% raw %} {% endhint %} {% endraw %}
 
 Successful password recovery should end previously created sessions. If this does not happen, an victim will not have mechanisms for managing the security of their account. As a result, an attacker will be able to maintain an active session for an extended period of time.
 
@@ -188,7 +188,7 @@ References:
 
 # Rate limits
 
-{% embed url="https://0xn3va.gitbook.io/cheat-sheets/web-application/improper-rate-limits" %}
+{% raw %} {% embed url="https://0xn3va.gitbook.io/cheat-sheets/web-application/improper-rate-limits" %} {% endraw %}
 
 # Third-party sign-in or sign-up
 

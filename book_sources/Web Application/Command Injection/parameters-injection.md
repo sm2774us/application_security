@@ -29,7 +29,7 @@ References:
 
 ## git-clone
 
-{% embed url="https://git-scm.com/docs/git-clone" %}
+{% raw %} {% embed url="https://git-scm.com/docs/git-clone" %} {% endraw %}
 
 ### --config
 
@@ -84,7 +84,7 @@ $ git clone -- "<REPO>" target_directory
 
 ## git-log
 
-{% embed url="https://git-scm.com/docs/git-log" %}
+{% raw %} {% embed url="https://git-scm.com/docs/git-log" %} {% endraw %}
 
 ### --output
 
@@ -106,7 +106,7 @@ References:
 
 ## git-grep
 
-{% embed url="https://git-scm.com/docs/git-grep" %}
+{% raw %} {% embed url="https://git-scm.com/docs/git-grep" %} {% endraw %}
 
 ### --no-index
 
@@ -119,9 +119,9 @@ References:
 
 The [scripts](https://docs.npmjs.com/cli/v7/using-npm/scripts) property of the `package.json` file supports a number of built-in scripts and their preset life cycle events as well as arbitrary scripts. These all can be executed using [npm run-script or npm run for short](https://docs.npmjs.com/cli/v7/commands/npm-run-script). 
 
-{% hint style="info" %}
+{% raw %} {% hint style="info" %} {% endraw %}
 Scripts from dependencies can be run with `npm explore <pkg> -- npm run <stage>`
-{% endhint %}
+{% raw %} {% endhint %} {% endraw %}
 
 Pre and post commands with matching names will be run for those as well (e.g. premyscript, myscript, postmyscript). To create pre or post scripts for any scripts defined in the `scripts` section of the `package.json`, simply create another script with a matching name and add `pre` or `post` to the beginning of them.
 
@@ -479,9 +479,9 @@ References:
 
 One of the sources of gems for `bundler` are git repositories with a gem's source code. Since a git repositories contains a source code `bundler` builds it before installing. Therefore, you can write an arbitrary code that will be executed when running `bundle install`.
 
-{% hint style="info" %}
+{% raw %} {% hint style="info" %} {% endraw %}
 You can execute an arbitrary code using both [gemspec](#gem-build) file and [native extensions](#extensions)
-{% endhint %}
+{% raw %} {% endhint %} {% endraw %}
 
 Create a repository on `github.com` with the following `hola.gemspec` file:
 
@@ -532,9 +532,9 @@ You can specify that a gem is located in a particular location on the file syste
 
 Similar to the semantics of the `:git` option, the `:path` option requires that the directory in question either contains a `.gemspec` for the gem, or that you specify an explicit version that bundler should use.
 
-{% hint style="info" %}
+{% raw %} {% hint style="info" %} {% endraw %}
 Unlike `:git`, `bundler` does not compile native extensions for gems specified as paths
-{% endhint %}
+{% raw %} {% endhint %} {% endraw %}
 
 Therefore, you can gain code execution using the [.gemspec file with an arbitrary code](#gem-build) or [built gem with native extension](#extensions).
 

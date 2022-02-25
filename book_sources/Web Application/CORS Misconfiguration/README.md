@@ -2,15 +2,15 @@
 
 Cross-origin resource sharing (CORS) is a browser mechanism which enables controlled access to resources located outside of a given domain. It extends and adds flexibility to the same-origin policy (SOP).
 
-{% hint style="info" %}
+{% raw %} {% hint style="info" %} {% endraw %}
 The same-origin policy is a restrictive cross-origin specification that limits the ability for a website to interact with resources outside of the source domain
-{% endhint %}
+{% raw %} {% endhint %} {% endraw %}
 
 The CORS standard works by adding new HTTP headers that let servers describe which origins are permitted to read that information from a web browser. A web application executes a cross-origin HTTP request when it requests a resource that has a different origin from its own.
 
-{% hint style="info" %}
+{% raw %} {% hint style="info" %} {% endraw %}
 Origin is the following triple: (scheme, host, port)
-{% endhint %}
+{% raw %} {% endhint %} {% endraw %}
 
 For HTTP request methods that can cause side-effects on server data, the specification mandates that browsers preflight the request, soliciting supported methods from a server with the HTTP `OPTIONS` request method, and then, upon approval from a server, sending the actual request. 
 
@@ -53,9 +53,9 @@ Credentialed requests allow to send HTTP cookies and HTTP Authentication informa
 
 When responding to a credentialed request, a server must specify an origin in a value of the `Access-Control-Allow-Origin` header, instead of specifying the `'*'` wildcard.
 
-{% hint style="info" %}
+{% raw %} {% hint style="info" %} {% endraw %}
 Cookies set in CORS responses are subject to normal third-party cookie policies
-{% endhint %}
+{% raw %} {% endhint %} {% endraw %}
 
 ## The HTTP request headers
 
@@ -69,11 +69,11 @@ Origin: <origin>
 
 The `Origin` header indicates an origin of a cross-site access request or preflight request. The `origin` parameter is a URI indicating a server from which the request initiated. It does not include any path information, but only a server name.
 
-{% hint style="info" %}
+{% raw %} {% hint style="info" %} {% endraw %}
 The origin value can be null, or a URI
 
 In any access control request, the `Origin` header is always sent
-{% endhint %}
+{% raw %} {% endhint %} {% endraw %}
 
 ### Access-Control-Request-Method
 

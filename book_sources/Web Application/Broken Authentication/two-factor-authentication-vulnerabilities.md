@@ -10,17 +10,17 @@ An application can provide users with the "remember me" function so that the nex
 
 An application can "memorizes" the IP address from which a user is authenticated and do not ask for the second factor at further logins. If an application relies on HTTP headers to determine a client's IP address, try to spoof the IP address using the following headers:
 
-{% embed url="https://gist.github.com/0xn3va/c27cdcee6a7e84300165d9ec25a3d2b4" %}
+{% raw %} {% embed url="https://gist.github.com/0xn3va/c27cdcee6a7e84300165d9ec25a3d2b4" %} {% endraw %}
 
 # Common cases when using OTP
 
-{% embed url="https://0xn3va.gitbook.io/cheat-sheets/web-application/broken-authentication#phone-and-otp-authentication" %}
+{% raw %} {% embed url="https://0xn3va.gitbook.io/cheat-sheets/web-application/broken-authentication#phone-and-otp-authentication" %} {% endraw %}
 
 # Enabling 2FA does not end previously created sessions
 
-{% hint style="info" %}
+{% raw %} {% hint style="info" %} {% endraw %}
 This is the best practice to follow
-{% endhint %}
+{% raw %} {% endhint %} {% endraw %}
 
 Enabling two-factor authentication should end previously created sessions. If this does not happen, an victim will not have mechanisms for managing the security of their account. As a result, an attacker will be able to maintain an active session for an extended period of time.
 
@@ -104,7 +104,7 @@ Try to find a vulnerability that could steal backup codes from a response to a r
 
 # Improper rate limits
 
-{% embed url="https://0xn3va.gitbook.io/cheat-sheets/web-application/improper-rate-limits" %}
+{% raw %} {% embed url="https://0xn3va.gitbook.io/cheat-sheets/web-application/improper-rate-limits" %} {% endraw %}
 
 # Mixing 2FA modes
 

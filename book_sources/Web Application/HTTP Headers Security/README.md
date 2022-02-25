@@ -1,1 +1,1 @@
-{% embed url="https://web.dev/security-headers/" %}
+{% raw %} {% embed url="https://web.dev/security-headers/" %} {% endraw %}

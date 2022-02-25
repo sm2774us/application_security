@@ -22,9 +22,9 @@ The primary information contained in an Intent is the following:
 - **Component name** is the name of the component to start. If you need to start a specific component in your app, you should specify the component name.
 - **Category** is a string containing additional information about the kind of component that should handle the intent (such as [CATEGORY_BROWSABLE](https://developer.android.com/reference/android/content/Intent#CATEGORY_BROWSABLE) or [CATEGORY_LAUNCHER](https://developer.android.com/reference/android/content/Intent#CATEGORY_LAUNCHER)).
 
-{% hint style="info" %}
+{% raw %} {% hint style="info" %} {% endraw %}
 Component name, action, data, and category properties represent the defining characteristics of an intent. By reading these properties, the Android system is able to resolve which app component it should start.
-{% endhint %}
+{% raw %} {% endhint %} {% endraw %}
 
 An intent can carry additional information that does not affect how it is resolved to an app component. An intent can also supply the following information:
 - **Extras** are key-value pairs that carry additional information required to accomplish the requested action. Just as some actions use particular kinds of data URIs, some actions also use particular extras.
@@ -40,9 +40,9 @@ Each intent filter is defined by an [&lt;intent-filter&gt;](https://developer.an
 - **[&lt;data&gt;](https://developer.android.com/guide/topics/manifest/data-element)** declares the type of data accepted, using one or more attributes that specify various aspects of the data URI (`scheme`, `host`, `port`, `path`) and MIME type.
 - **[&lt;category&gt;](https://developer.android.com/guide/topics/manifest/category-element)** declares the intent category accepted, in the name attribute.
 
-{% hint style="info" %}
+{% raw %} {% hint style="info" %} {% endraw %}
 To receive implicit intents, it is necessary to include the [CATEGORY_DEFAULT](https://developer.android.com/reference/android/content/Intent#CATEGORY_DEFAULT) category in the intent filter. The methods `startActivity()` and `startActivityForResult()` treat all intents as if they declared the `CATEGORY_DEFAULT` category. If this category is not declared in the intent filter, no implicit intents will resolve to an activity.
-{% endhint %}
+{% raw %} {% endhint %} {% endraw %}
 
 For example, here's an activity declaration with an intent filter to receive an [ACTION_SEND](https://developer.android.com/reference/android/content/Intent#ACTION_SEND) intent when the data type is text:
 
@@ -56,9 +56,9 @@ For example, here's an activity declaration with an intent filter to receive an 
 </activity>
 ```
 
-{% hint style="info" %}
+{% raw %} {% hint style="info" %} {% endraw %}
 For all activities, it is necessary to declare intent filters in the manifest file. However, filters for broadcast receivers can be registered dynamically by calling [registerReceiver()](https://developer.android.com/reference/android/content/Context#registerReceiver%28android.content.BroadcastReceiver,%20android.content.IntentFilter,%20java.lang.String,%20android.os.Handler%29) and then unregistered with [unregisterReceiver()](https://developer.android.com/reference/android/content/Context#unregisterReceiver%28android.content.BroadcastReceiver%29). Doing so allows an app to listen for specific broadcasts during only a specified period of time while the app is running.
-{% endhint %}
+{% raw %} {% endhint %} {% endraw %}
 
 ## Intent types
 
@@ -115,9 +115,9 @@ If the `Android System` does not find any activity (across all apps) the [Activi
 
 If multiple intent filters are compatible the system will launch the App Chooser. It displays a dialog so the user can pick which app to use.
 
-{% hint style="info" %}
+{% raw %} {% hint style="info" %} {% endraw %}
 You can control an app's position in the list using the `android:priority="num"` attribute within the intent filter
-{% endhint %}
+{% raw %} {% endhint %} {% endraw %}
 
 # Security issues
 
@@ -402,7 +402,7 @@ By itself, starting hidden components does not have much security impact and req
 
 ### Access arbitrary components via WebView
 
-{% embed url="https://0xn3va.gitbook.io/cheat-sheets/android-application/webview-vulnerabilities#access-arbitrary-components" %}
+{% raw %} {% embed url="https://0xn3va.gitbook.io/cheat-sheets/android-application/webview-vulnerabilities#access-arbitrary-components" %} {% endraw %}
 
 ### Bypass protection
 

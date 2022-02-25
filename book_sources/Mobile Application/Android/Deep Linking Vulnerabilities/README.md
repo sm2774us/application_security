@@ -71,7 +71,7 @@ The following XML snippet shows an example of an intent filter in a manifest for
 
 An app can implement its own intent parser to handle deeplinks using JSON objects, strings or byte arrays that may expand Serializable and Parcelable objects and allow to set insecure flags.
 
-{% embed url="https://0xn3va.gitbook.io/cheat-sheets/android-application/intent-vulnerabilities#access-arbitrary-components" %}
+{% raw %} {% embed url="https://0xn3va.gitbook.io/cheat-sheets/android-application/intent-vulnerabilities#access-arbitrary-components" %} {% endraw %}
 
 For example, the following deeplink parser converts a byte array to Parcel and read an intent from it:
 

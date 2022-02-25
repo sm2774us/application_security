@@ -51,9 +51,9 @@ When an frontend proxy server accepts a user's request, it can add the IP addres
 
 In addition to masking the source IP address from some components of the system infrastructure, this method may offer a way to bypass authentication or access control decisions. For example, if a request is detected that originates from a local range of IP addresses, the application processes the request as trusted and provides access to internal resources.
 
-{% hint style="info" %}
+{% raw %} {% hint style="info" %} {% endraw %}
 Do not forget that `X-Forwarded-For` header is not the only header for transmitting the user's real IP address, `Forwarded`, `X-Real-IP` and many others are also used.
-{% endhint %}
+{% raw %} {% endhint %} {% endraw %}
 
 ## Fingerprinting services
 

@@ -16,7 +16,7 @@ Many rate limit algorithms rely on a client IP address when deciding to block a 
 
 If an application relies on the value of HTTP headers to determine an original IP address of a client, you can try to override IP address with the following headers:
 
-{% embed url="https://gist.github.com/0xn3va/c27cdcee6a7e84300165d9ec25a3d2b4" %}
+{% raw %} {% embed url="https://gist.github.com/0xn3va/c27cdcee6a7e84300165d9ec25a3d2b4" %} {% endraw %}
 
 For instance, you can add the `X-Forwarded-For` header to the OTP check request:
 
@@ -38,9 +38,9 @@ You can use a proxy or VPN to change an IP address. To automate the change of IP
 - [requests-ip-rotator](https://github.com/Ge0rg3/requests-ip-rotator). A Python library to utilize AWS API Gateway's large IP pool as a proxy to generate pseudo-infinite IPs for web scraping and brute forcing.
 - A ready-made or self-written script with a large number of proxy servers or VPNs.
 
-{% hint style="info" %}
+{% raw %} {% hint style="info" %} {% endraw %}
 If an application is behind a CloudFlare firewall, all requests sent from AWS IPs will be blocked. To avoid this, you need to discover an original IP of an application.
-{% endhint %}
+{% raw %} {% endhint %} {% endraw %}
 
 # Changing path
 
@@ -88,7 +88,7 @@ An application can correctly process such requests and interpret this as one att
 
 # Race condition
 
-{% embed url="https://0xn3va.gitbook.io/cheat-sheets/web-application/race-condition" %}
+{% raw %} {% embed url="https://0xn3va.gitbook.io/cheat-sheets/web-application/race-condition" %} {% endraw %}
 
 # Rate limits after authentication
 

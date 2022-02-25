@@ -210,11 +210,11 @@ make-127-0-0-1-and-127-127-127-127-rr.1u.ms. 0 IN A 127.0.0.1
 make-127-0-0-1-and-127-127-127-127-rr.1u.ms. 0 IN A 127.127.127.127
 ```
 
-{% embed url="https://github.com/neex/1u.ms" %}
+{% raw %} {% embed url="https://github.com/neex/1u.ms" %} {% endraw %}
 
 Also, check `sslip.io`:
 
-{% embed url="https://sslip.io/" %}
+{% raw %} {% embed url="https://sslip.io/" %} {% endraw %}
 
 ## DNS rebinding
 
@@ -230,15 +230,15 @@ $ dig A make-1-1-1-1-rebind-127-0-0-1-rr.1u.ms
 make-1-1-1-1-rebind-127-0-0-1-rr.1u.ms. 0 IN A 127.0.0.1
 ```
 
-{% embed url="https://github.com/neex/1u.ms" %}
+{% raw %} {% embed url="https://github.com/neex/1u.ms" %} {% endraw %}
 
 Also, check `lock.cmpxchg8b.com`:
 
-{% embed url="https://lock.cmpxchg8b.com/rebinder.html" %}
+{% raw %} {% embed url="https://lock.cmpxchg8b.com/rebinder.html" %} {% endraw %}
 
 # Adobe ColdFusion
 
-{% embed url="https://hoyahaxa.blogspot.com/2021/04/ssrf-in-coldfusioncfml-tags-and.html" %}
+{% raw %} {% embed url="https://hoyahaxa.blogspot.com/2021/04/ssrf-in-coldfusioncfml-tags-and.html" %} {% endraw %}
 
 # FFmpeg 
 
@@ -250,7 +250,7 @@ Also, check `lock.cmpxchg8b.com`:
 
 # SVG
 
-{% embed url="https://github.com/allanlw/svg-cheatsheet" %}
+{% raw %} {% embed url="https://github.com/allanlw/svg-cheatsheet" %} {% endraw %}
 
 # Server-side processing of arbitrary HTML and JS 
 
@@ -263,7 +263,7 @@ Server-side processing of arbitrary HTML and JS data from a user can often be fo
 
 Use HTTPLeaks to determine if any of the allowed HTML tags could be used to abuse the processing.
 
-{% embed url="https://github.com/cure53/HTTPLeaks" %}
+{% raw %} {% embed url="https://github.com/cure53/HTTPLeaks" %} {% endraw %}
 
 References:
 - [Write up: Local File Read via XSS in Dynamically Generated PDF](https://www.noob.ninja/2017/11/local-file-read-via-xss-in-dynamically.html)
@@ -273,7 +273,7 @@ References:
 
 # Request splitting
 
-{% embed url="https://www.rfk.id.au/blog/entry/security-bugs-ssrf-via-request-splitting/" %}
+{% raw %} {% embed url="https://www.rfk.id.au/blog/entry/security-bugs-ssrf-via-request-splitting/" %} {% endraw %}
 
 # HTTP headers
 

@@ -62,9 +62,9 @@ query {
 }
 ```
 
-{% hint style="info" %}
+{% raw %} {% hint style="info" %} {% endraw %}
 All fields within the Query operation are requested parallelly.
-{% endhint %}
+{% raw %} {% endhint %} {% endraw %}
 
 ```graphql
 /**
@@ -96,9 +96,9 @@ mutation {
 }
 ```
 
-{% hint style="info" %}
+{% raw %} {% hint style="info" %} {% endraw %}
 Fields within the Mutation operation are requested sequentially.
-{% endhint %}
+{% raw %} {% endhint %} {% endraw %}
 
 ```graphql
 /**
@@ -159,15 +159,15 @@ A field can have an interface (or a list of that interface) as its return type. 
 
 GraphQL defines the introspection schema, which is used to ask a GraphQL for information about what queries it supports. You can fetch introspection schema with the following query:
 
-{% embed url="https://gist.github.com/0xn3va/af014586187015db730bcf638a65ddac" %}
+{% raw %} {% embed url="https://gist.github.com/0xn3va/af014586187015db730bcf638a65ddac" %} {% endraw %}
 
 You can also use various GraphQL IDEs or GraphQL Voyager for introspection.
 
-{% embed url="https://github.com/APIs-guru/graphql-voyager" %}
+{% raw %} {% embed url="https://github.com/APIs-guru/graphql-voyager" %} {% endraw %}
 
 However, developers can forbid introspection of their applications. In this case, you can try to obtain the schema with the `clairvoyance`.
 
-{% embed url="https://github.com/nikitastupin/clairvoyance" %}
+{% raw %} {% embed url="https://github.com/nikitastupin/clairvoyance" %} {% endraw %}
 
 ### How to read an introspection schema?
 
@@ -303,7 +303,7 @@ GraphQL engines are used to implement GraphQL API. The engines can have vulnerab
 
 In order to determine which engine is used you can use the `graphw00f`.
 
-{% embed url="https://github.com/dolevf/graphw00f" %}
+{% raw %} {% embed url="https://github.com/dolevf/graphw00f" %} {% endraw %}
 
 ## Broken access control
 

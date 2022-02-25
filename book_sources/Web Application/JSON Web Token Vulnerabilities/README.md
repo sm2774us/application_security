@@ -4,13 +4,13 @@ JSON Web Token (JWT) represents a set of claims as a JSON object that is encoded
 
 A JWT is represented as a sequence of URL-safe parts (JWT claims sets) separated by the `.` characters. Each part contains a base64url-encoded value.
 
-{% hint style="info" %}
+{% raw %} {% hint style="info" %} {% endraw %}
 Base64url algorithm is the base64 algorithm which has the following replacements:
 - `+` to `-`
 - `/` to `_`
 
 and there is no standard base64 padding, which usually consists of the `=` signs.
-{% endhint %}
+{% raw %} {% endhint %} {% endraw %}
 
 The number of parts in the JWT is dependent upon the representation of the resulting JWS using the JWS compact serialization or JWE using the JWE compact serialization.
 
@@ -47,9 +47,9 @@ A producer and consumer of a JWT may agree to use claim names that are private n
 
 ## JOSE header
 
-{% hint style="info" %}
+{% raw %} {% hint style="info" %} {% endraw %}
 The JOSE (JSON Object Signing and Encryption) header is a JSON object containing the parameters describing the cryptographic operations and parameters employed.
-{% endhint %}
+{% raw %} {% endhint %} {% endraw %}
 
 For a JWT object, the members of the JSON object represented by the JOSE header describe the cryptographic operations applied to the JWT and optionally, additional properties of the JWT. Depending upon whether the JWT is a JWS or JWE, the corresponding rules for the JOSE header values apply.
 
@@ -61,9 +61,9 @@ There are two closely related serializations for JWS which both share the same c
 - The [JWS Compact Serialization](https://tools.ietf.org/html/rfc7515#section-7.1) is a compact, URL-safe representation intended for space-constrained environments such as HTTP Authorization headers and URI query parameters.
 - The [JWS JSON Serialization](https://tools.ietf.org/html/rfc7515#section-7.2) represents JWSs as JSON objects and enables multiple signatures and/or MACs to be applied to the same content.
 
-{% hint style="info" %}
+{% raw %} {% hint style="info" %} {% endraw %}
 The JWT is a JWS using the JWS compact serialization.
-{% endhint %}
+{% raw %} {% endhint %} {% endraw %}
 
 A JWS represents these logical values:
 
@@ -109,9 +109,9 @@ There are two closely related serializations for JWE which both share the same c
 - The [JWE Compact Serialization](https://tools.ietf.org/html/rfc7516#section-7.1) is a compact, URL-safe representation intended for space constrained environments such as HTTP Authorization headers and URI query parameters.
 - The [JWE JSON Serialization](https://tools.ietf.org/html/rfc7516#section-7.2) represents JWEs as JSON objects and enables the same content to be encrypted to multiple parties.
 
-{% hint style="info" %}
+{% raw %} {% hint style="info" %} {% endraw %}
 The JWT is a JWE using the JWE compact serialization.
-{% endhint %}
+{% raw %} {% endhint %} {% endraw %}
 
 A JWE represents these logical values:
 
@@ -153,11 +153,11 @@ JWE defines the following registered header parameter names:
 
 ### JWE Encrypted Key
 
-{% hint style="info" %}
+{% raw %} {% hint style="info" %} {% endraw %}
 **Authenticated Encryption with Associated Data (AEAD)** is an algorithm is one that encrypts the plaintext, allows additional authenticated data to be specified, and provides an integrated content integrity check over the ciphertext and additional authenticated data. AEAD algorithms accept two inputs, the plaintext and the additional authenticated data value, and produce two outputs, the ciphertext and the authentication tag value. AES Galois/Counter Mode (GCM) is one such algorithm.
 
 **Content encryption key** is a symmetric key for the AEAD algorithm used to encrypt the plaintext to produce the ciphertext and the authentication tag.
-{% endhint %}
+{% raw %} {% endhint %} {% endraw %}
 
 Encrypted content encryption key value. Note that for some algorithms, the JWE encrypted key value is specified as being the empty octet sequence.
 
@@ -167,9 +167,9 @@ Initialization vector is an initialization vector value used when encrypting the
 
 ### JWE AAD
 
-{% hint style="info" %}
+{% raw %} {% hint style="info" %} {% endraw %}
 **Additional Authenticated Data (AAD)** is an input to an AEAD operation that is integrity protected but not encrypted.
-{% endhint %}
+{% raw %} {% endhint %} {% endraw %}
 
 AAD is an additional value to be integrity protected by the authenticated encryption operation. This can only be present when using the JWE JSON serialization.
 
@@ -181,9 +181,9 @@ Ciphertext is a value resulting from authenticated encryption of the plaintext w
 
 ### JWE Authentication Tag
 
-{% hint style="info" %}
+{% raw %} {% hint style="info" %} {% endraw %}
 **Authentication Tag** is an output of an AEAD operation that ensures the integrity of the ciphertext and the additional authenticated data. Note that some algorithms may not use an authentication tag, in which case this value is the empty octet sequence.
-{% endhint %}
+{% raw %} {% endhint %} {% endraw %}
 
 Authentication tag is a value resulting from authenticated encryption of the plaintext with additional authenticated data.
 
@@ -305,7 +305,7 @@ References:
 
 The "jku" ("x5u") header parameter is the URI that the server uses to retrieve the public keys (X.509 public key certificate or certificate chain). You can use it to exploit SSRF vulnerabilities.
 
-{% embed url="https://0xn3va.gitbook.io/cheat-sheets/web-application/server-side-request-forgery" %}
+{% raw %} {% embed url="https://0xn3va.gitbook.io/cheat-sheets/web-application/server-side-request-forgery" %} {% endraw %}
 
 ## Injections via the kid header parameter
 
@@ -331,9 +331,9 @@ References:
 
 # Tool
 
-{% embed url="https://github.com/ticarpi/jwt_tool" %}
+{% raw %} {% embed url="https://github.com/ticarpi/jwt_tool" %} {% endraw %}
 
-{% embed url="https://github.com/hahwul/jwt-hack" %}
+{% raw %} {% embed url="https://github.com/hahwul/jwt-hack" %} {% endraw %}
 
 # References
 

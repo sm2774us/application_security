@@ -12,9 +12,9 @@ for (let i = 0; i < 700; i++) {
 }
 ```
 
-{% hint style="info" %}
+{% raw %} {% hint style="info" %} {% endraw %}
 Third-party cookies pointing to a different domain will not be overwritten
-{% endhint %}
+{% raw %} {% endhint %} {% endraw %}
 
 Cookie jar overflow can be used for overwrite `HttpOnly` cookies, so you can remove them and reset with an arbitrary value.
 

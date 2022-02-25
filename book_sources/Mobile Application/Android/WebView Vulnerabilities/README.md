@@ -4,7 +4,7 @@
 
 The Intent class allows developers to convert an intent to a string holding a URI representation of it with the [toUri(flags)](https://developer.android.com/reference/android/content/Intent#toUri%28int%29) method and create an intent from this URI with the [parseUri(stringUri, flags)](https://developer.android.com/reference/android/content/Intent#parseUri%28java.lang.String,%20int%29) method. An app can use this to parse a URL with the `intent` scheme into intent and launch an activity while handling the URL within the WebView. If the handling is not implemented correctly, you can access arbitrary components of the app.
 
-{% embed url="https://0xn3va.gitbook.io/cheat-sheets/android-application/intent-vulnerabilities#access-arbitrary-components" %}
+{% raw %} {% embed url="https://0xn3va.gitbook.io/cheat-sheets/android-application/intent-vulnerabilities#access-arbitrary-components" %} {% endraw %}
 
 Developers can override the [shouldOverrideUrlLoading()](https://developer.android.com/reference/android/webkit/WebViewClient#shouldOverrideUrlLoading%28android.webkit.WebView,%20android.webkit.WebResourceRequest%29) method of the WebViewClient class to handle all efforts to load a new link within WebView. The example of mishandling might look as follows:
 
@@ -195,9 +195,9 @@ file://legitimate.com/sdcard/payload.html
 
 [setWebContentsDebuggingEnabled](https://developer.android.com/reference/android/webkit/WebView.html#setWebContentsDebuggingEnabled%28boolean%29) enables debugging of web contents (HTML/CSS/JavaScript) loaded into any WebViews of an application. This flag is used in order to facilitate debugging of web layouts and JavaScript code running inside WebViews.
 
-{% hint style="info" %}
+{% raw %} {% hint style="info" %} {% endraw %}
 `WebContentsDebugging` is not affected by the state of the `debuggable` flag in the application's manifest. 
-{% endhint %}
+{% raw %} {% endhint %} {% endraw %}
 
 Enabling this flag allows you to execute arbitrary JavaScript code within any WebViews of an application.
 

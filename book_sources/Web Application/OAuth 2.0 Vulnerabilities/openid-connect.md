@@ -89,9 +89,9 @@ The OpenID Connect utilizes three endpoints:
 
 The authorization endpoint performs authentication of the end-user. This is done by sending the user agent to the authorization server's authorization endpoint for authentication and authorization, using request parameters defined by OAuth 2.0 and additional parameters and parameter values defined by OpenID Connect.
 
-{% hint style="info" %}
+{% raw %} {% hint style="info" %} {% endraw %}
 The token endpoint is used with every authorization flow.
-{% endhint %}
+{% raw %} {% endhint %} {% endraw %}
 
 OpenID Connect uses the following OAuth 2.0 request parameters:
 
@@ -136,9 +136,9 @@ See also [Nonce Implementation Notes](https://openid.net/specs/openid-connect-co
 
 The token endpoint is used by relying party (client) to obtain an access token, an ID token, and optionally a refresh token. The token endpoint requires relying party (client) authentication and support several methods, details you can find [here](https://openid.net/specs/openid-connect-core-1_0.html#ClientAuthentication).
 
-{% hint style="info" %}
+{% raw %} {% hint style="info" %} {% endraw %}
 The token endpoint is used by the authorization code and the hybrid flow types. 
-{% endhint %}
+{% raw %} {% endhint %} {% endraw %}
 
 When using the hybrid flow, the contents of an ID token returned from the Token Endpoint are the same as for an ID token returned from the authorization endpoint.
 
@@ -316,11 +316,11 @@ The [hybrid flow](https://openid.net/specs/openid-connect-core-1_0.html#HybridFl
 
 # Security issues in the OAuth2.0 protocol
 
-{% embed url="https://0xn3va.gitbook.io/cheat-sheets/web-application/oauth-2.0-vulnerabilities" %}
+{% raw %} {% embed url="https://0xn3va.gitbook.io/cheat-sheets/web-application/oauth-2.0-vulnerabilities" %} {% endraw %}
 
 # Security issues with JSON Web Token
 
-{% embed url="https://0xn3va.gitbook.io/cheat-sheets/web-application/json-web-token-vulnerabilities" %}
+{% raw %} {% embed url="https://0xn3va.gitbook.io/cheat-sheets/web-application/json-web-token-vulnerabilities" %} {% endraw %}
 
 # Security issues in the relying party
 
@@ -336,9 +336,9 @@ the OpenID Connect flow is likely to be vulnerable to replay attack. To exploit 
 
 # Security issues in the OpenID provider
 
-{% hint style="info" %}
+{% raw %} {% hint style="info" %} {% endraw %}
 Try to discover the `.well-known/openid-configuration` endpoint, according to the [specification](https://openid.net/specs/openid-connect-discovery-1_0.html#ProviderConfig) it contains useful information about different server configuration values.
-{% endhint %}
+{% raw %} {% endhint %} {% endraw %}
 
 ## Abusing WebFinger service
 
@@ -376,7 +376,7 @@ The `resource` should contain a valid URL in one of the following forms:
 
 The UserInfo endpoint should support the use of Cross-origin resource sharing according to the [specification](https://openid.net/specs/openid-connect-core-1_0.html#UserInfo).
 
-{% embed url="https://0xn3va.gitbook.io/cheat-sheets/web-application/cors-misconfiguration" %}
+{% raw %} {% embed url="https://0xn3va.gitbook.io/cheat-sheets/web-application/cors-misconfiguration" %} {% endraw %}
 
 ## SSRF via dynamic client registration
 
@@ -406,9 +406,9 @@ Authorization: Bearer eyJhbGciOiJSUzI1NiJ9.eyJ...
 
 Some of these values are passed in via URL links and can be potentially vulnerable to SSRF.
 
-{% hint style="info" %}
+{% raw %} {% hint style="info" %} {% endraw %}
 Most servers do not resolve these URLs immediately when they receive a registration request. Instead, they just save these parameters and use them later during the OAuth authorization flow.
-{% endhint %}
+{% raw %} {% endhint %} {% endraw %}
 
 The following parameters are particularly interesting for SSRF attacks:
 - `logo_uri` - URL that references a logo for the client application. After you register a client, you can try to call the OAuth authorization endpoint using your new "client_id". After the login, the server will ask you to approve the request and may display the image from the "logo_uri". If the server fetches the image by itself, the SSRF should be triggered by this step. Alternatively, the server may just include the logo via a client-side `&lt;img&gt;` tag, which can lead to XSS.

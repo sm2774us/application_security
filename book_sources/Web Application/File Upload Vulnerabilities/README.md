@@ -24,15 +24,15 @@ $ cd ..
 $ tar -rf a.tar sub
 ```
 
-{% embed url="https://gitlab.com/gitlab-org/gitlab-foss/-/issues/55501" %}
+{% raw %} {% embed url="https://gitlab.com/gitlab-org/gitlab-foss/-/issues/55501" %} {% endraw %}
 
 ## Zip Slip
 
 The Zip Slip takes advantage of zips that may contain files with specifically placed payloads set to the names, that once extracted, lead to a path traversal, and can write any file to any directory the webserver has access to. It can affect numerous archive formats, including `tar`, `jar`, `war`, `cpio`, `apk`, `rar` and `7z`. 
 
-{% embed url="https://github.com/ptoomey3/evilarc" %}
+{% raw %} {% embed url="https://github.com/ptoomey3/evilarc" %} {% endraw %}
 
-{% embed url="https://github.com/snyk/zip-slip-vulnerability" %}
+{% raw %} {% embed url="https://github.com/snyk/zip-slip-vulnerability" %} {% endraw %}
 
 # Abuse filename
 
@@ -124,7 +124,7 @@ References:
 
 ## Vulnerabilities in image processors
 
-{% embed url="https://github.com/barrracud4/image-upload-exploits" %}
+{% raw %} {% embed url="https://github.com/barrracud4/image-upload-exploits" %} {% endraw %}
 
 Resources:
 - Zeronights 2021: Emil Lerner – HotPics
@@ -133,7 +133,7 @@ Resources:
 
 ## FFmpeg
 
-{% embed url="https://0xn3va.gitbook.io/cheat-sheets/web-application/server-side-request-forgery#ffmpeg" %}
+{% raw %} {% embed url="https://0xn3va.gitbook.io/cheat-sheets/web-application/server-side-request-forgery#ffmpeg" %} {% endraw %}
 
 ## ExifTool
 
@@ -167,7 +167,7 @@ Try to upload ColdFusion files with the `cfm`, `cfml`, `cfc` or `dbm` extensions
 
 ### Adobe ColdFusion SSRF
 
-{% embed url="https://0xn3va.gitbook.io/cheat-sheets/web-application/server-side-request-forgery#adobe-coldfusion" %}
+{% raw %} {% embed url="https://0xn3va.gitbook.io/cheat-sheets/web-application/server-side-request-forgery#adobe-coldfusion" %} {% endraw %}
 
 ## JSP
 
@@ -179,7 +179,7 @@ Try to upload perl files with the `pl`, `pm`, `cgi`, or `lib` extensions to get 
 
 ## SVG
 
-{% embed url="https://github.com/allanlw/svg-cheatsheet" %}
+{% raw %} {% embed url="https://github.com/allanlw/svg-cheatsheet" %} {% endraw %}
 
 ## XML
 
@@ -192,7 +192,7 @@ References:
 
 # Race condition
 
-{% embed url="https://0xn3va.gitbook.io/cheat-sheets/web-application/race-condition" %}
+{% raw %} {% embed url="https://0xn3va.gitbook.io/cheat-sheets/web-application/race-condition" %} {% endraw %}
 
 ## File upload race condition
 

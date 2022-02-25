@@ -182,7 +182,7 @@ HTTP/1.1 200 OK
 <meta property="og:image" content="https://foo."><script>alert(1)</script>"/>
 ```
 
-{% embed url="https://github.com/Hackmanit/Web-Cache-Vulnerability-Scanner" %}
+{% raw %} {% embed url="https://github.com/Hackmanit/Web-Cache-Vulnerability-Scanner" %} {% endraw %}
 
 References:
 - [PortSwigger Research: Web Cache Entanglement: Novel Pathways to Poisoning](https://portswigger.net/research/web-cache-entanglement)

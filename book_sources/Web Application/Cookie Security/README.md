@@ -60,11 +60,11 @@ The `SameSite` attribute prevents the browser from sending cookies along with cr
     - Possible solution: Use two cookies. The first cookie, **without** `SameSite`, as a uniq user id, allows you to show username e.g. Second cookie, **with** `SameSite`, to make purchases, profile changes, and more
 - `Lax`, adds an exception allowing the send a cookies when navigating from an external URL, which uses `secure` HTTP methods, for example, when clicking on the link. The `secure` methods: `GET, HEAD, OPTIONS и TRACE`.
 
-{% hint style="info" %}
+{% raw %} {% hint style="info" %} {% endraw %}
 From Chrome 80 (February 2019) the default behaviour of a cookie without a cookie SameSite attribute will be Lax, check the [link](https://www.troyhunt.com/promiscuous-cookies-and-their-impending-death-via-the-samesite-policy/)
 
 Temporary, after applying this change, the cookies without a SameSite in Chrome will be treated as None during the first 2 minutes and then as Lax, [Bypass SameSite Cookies Default to Lax and get CSRF](https://medium.com/@renwa/bypass-samesite-cookies-default-to-lax-and-get-csrf-343ba09b9f2b)
-{% endhint %}
+{% raw %} {% endhint %} {% endraw %}
 
 References:
 - [MDN Web Docs - Set-cookie: Browser compatibility](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Set-Cookie#Browser_compatibility)

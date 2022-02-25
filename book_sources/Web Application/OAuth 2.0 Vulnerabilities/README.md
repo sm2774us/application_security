@@ -8,9 +8,9 @@ Access tokens are issued to third-party clients by an authorization server with 
 
 The permissions represented by the access token, in OAuth 2.0 terms are known as `scopes`.
 
-{% hint style="info" %}
+{% raw %} {% hint style="info" %} {% endraw %}
 Scope is a mechanism that defines the specific actions applications can be allowed to do or information that they can request on a user's behalf.
-{% endhint %}
+{% raw %} {% endhint %} {% endraw %}
 
 ## Access token
 
@@ -63,9 +63,9 @@ The OAuth 2.0 utilizes two endpoints:
 
 The [authorization endpoint](https://tools.ietf.org/html/rfc6749#section-3.1) is used to interact with the resource owner and get the authorization to access the protected resource.
 
-{% hint style="info" %}
+{% raw %} {% hint style="info" %} {% endraw %}
 The authorization endpoint is used by the authorization code and the implicit grants. 
-{% endhint %}
+{% raw %} {% endhint %} {% endraw %}
 
 To better understand this, imagine that you want to log in to a service using your Google account. First, the service redirects you to Google in order to authenticate (if you are not already logged in) and then you will get a consent screen, where you will be asked to authorize the service to access some of your data (protected resources), for example, your email address and your list of contacts.
 
@@ -94,9 +94,9 @@ Here is a sequence diagram of the full authorization code grant with a `state` p
 
 The [token endpoint](https://tools.ietf.org/html/rfc6749#section-3.2) is used by the client to obtain an [access token](https://tools.ietf.org/html/rfc6749#section-1.4) by presenting its authorization grant or refresh token. The token endpoint requires client authentication as described [here](https://tools.ietf.org/html/rfc6749#section-3.2.1).
 
-{% hint style="info" %}
+{% raw %} {% hint style="info" %} {% endraw %}
 The token endpoint is used with every authorization grant except for the implicit grant type (since an access token is issued directly).
-{% endhint %}
+{% raw %} {% endhint %} {% endraw %}
 
 ## Authorization Code Grant
 
@@ -239,7 +239,7 @@ https://vulnerable-website.com/authorize?
 
 The application, when processing the request, redirects a victim to the attacker's host.
 
-{% embed url="http://blog.intothesymmetry.com/2015/04/open-redirect-in-rfc6749-aka-oauth-20.html" %}
+{% raw %} {% embed url="http://blog.intothesymmetry.com/2015/04/open-redirect-in-rfc6749-aka-oauth-20.html" %} {% endraw %}
 
 # Security issues in the authorization server
 
@@ -251,7 +251,7 @@ If the `access_token` allows making requests to the API, it is worth checking wh
 
 The authorization server can allow to use accounts with non-confirmed email for granting access to protected resources. As a result, a third-party application will trust the received data.
 
-{% embed url="https://gitlab.com/gitlab-org/gitlab/-/issues/37038" %}
+{% raw %} {% embed url="https://gitlab.com/gitlab-org/gitlab/-/issues/37038" %} {% endraw %}
 
 ## Assignment of accounts based on email address
 
@@ -261,9 +261,9 @@ Applications often allow multiple authentication methods: using a login with a p
 
 ## Bypass redirect_uri validation via mass assignment
 
-{% embed url="https://nvd.nist.gov/vuln/detail/CVE-2021-27582" %}
+{% raw %} {% embed url="https://nvd.nist.gov/vuln/detail/CVE-2021-27582" %} {% endraw %}
 
-{% embed url="https://0xn3va.gitbook.io/cheat-sheets/framework/spring/mass-assignment" %}
+{% raw %} {% embed url="https://0xn3va.gitbook.io/cheat-sheets/framework/spring/mass-assignment" %} {% endraw %}
 
 ## CSRF authorization server
 

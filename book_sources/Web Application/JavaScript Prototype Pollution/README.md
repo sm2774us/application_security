@@ -1,8 +1,8 @@
-{% embed url="https://infosecwriteups.com/javascript-prototype-pollution-practice-of-finding-and-exploitation-f97284333b2" %}
+{% raw %} {% embed url="https://infosecwriteups.com/javascript-prototype-pollution-practice-of-finding-and-exploitation-f97284333b2" %} {% endraw %}
 
-{% embed url="https://labs.detectify.com/2021/06/08/what-is-a-prototype-pollution-vulnerability-and-how-does-page-fetch-help/" %}
+{% raw %} {% embed url="https://labs.detectify.com/2021/06/08/what-is-a-prototype-pollution-vulnerability-and-how-does-page-fetch-help/" %} {% endraw %}
 
-{% embed url="https://github.com/BlackFan/client-side-prototype-pollution" %}
+{% raw %} {% embed url="https://github.com/BlackFan/client-side-prototype-pollution" %} {% endraw %}
 
 # References
 
