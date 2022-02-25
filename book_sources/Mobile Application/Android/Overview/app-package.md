@@ -30,9 +30,9 @@ An Android App Bundle is a publishing format that includes all an application's 
 
 Google Play uses an app bundle to generate and serve optimized APKs for each device configuration, so only the code and resources that are needed for a specific device are downloaded to run the application.
 
-{% raw %} {% hint style="info" %} {% endraw %} 
+{% raw %} {% hint style="info" %} {% endraw %}
 In the second half of 2021, new apps will be required to publish with the Android App Bundle on Google Play.
-{% raw %} {% endhint %} {% endraw %} 
+{% raw %} {% endhint %} {% endraw %}
 
 An Android App Bundle is a file (with the `.aab` file extension) that developers upload to Google Play.
 

@@ -8,9 +8,9 @@
 
 [setAllowUniversalAccessFromFileURLs](https://developer.android.com/reference/android/webkit/WebSettings#setAllowUniversalAccessFromFileURLs%28boolean%29) sets whether cross-origin requests in the context of a file scheme URL should be allowed to access content from **any origin**. This includes access to content from other file scheme URLs or web contexts. The default value is `false` since Android 4.1.
 
-{% hint style="info" %}
+{% raw %} {% hint style="info" %} {% endraw %}
 This method was deprecated in API level 30
-{% endhint %}
+{% raw %} {% endhint %} {% endraw %}
 
 Enabling this setting allows malicious scripts loaded in a `file://` context to launch cross-site scripting attacks, either accessing arbitrary local files including WebView cookies, app private data or even credentials used on arbitrary web sites.
 
