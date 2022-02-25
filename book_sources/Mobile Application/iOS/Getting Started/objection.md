@@ -1,6 +1,6 @@
 You can use the following toolkit to interact with the patched app:
 
-{% embed url="https://github.com/sensepost/objection" %}
+{% raw %} {% embed url="https://github.com/sensepost/objection" %} {% endraw %}
 
 # Running
 

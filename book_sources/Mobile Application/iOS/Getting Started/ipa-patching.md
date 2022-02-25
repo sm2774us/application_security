@@ -1,6 +1,6 @@
 In order to start analyzing and managing the iOS app without jailbreak, the app's IPA itself needs to be patched and code signed to load the FridaGadget.dylib on start. This can be done using the following script:
 
-{% embed url="https://github.com/0xn3va/ipa-patching" %}
+{% raw %} {% embed url="https://github.com/0xn3va/ipa-patching" %} {% endraw %}
 
 To patch an IPA though, a few things need to be done in preparation: installing dependencies, obtaining the embedded.mobileprovision file and a code signing certificate from Apple.
 
@@ -64,7 +64,7 @@ So, to build and deploy a blank iOS application using XCode to get the updated e
 
 ![](img/xcode-mobileprovision-file.png)
 
-{% hint style="info" %}
+{% raw %} {% hint style="info" %} {% endraw %}
 Running your blank application for the first time on an iOS device will most probably result in a error that reads something like:
 
 ```
@@ -76,7 +76,7 @@ then select your Developer App certificate to trust it.
 What this means is that you need to also trust the iTunes account you used to run code on the iOS device you have. Simply navigate to your iOS devices:
 
 `Settings > General > Device Management > iTunes account from the "Developer App" section > Select "Trust"`
-{% endhint %}
+{% raw %} {% endhint %} {% endraw %}
 
 ## Dependencies
 
